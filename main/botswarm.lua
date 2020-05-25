@@ -6,6 +6,9 @@ for i=1,10 do
     
 end
 
+
+newBotsNameStr = tostring(newBotsNameNum)
+
 for i=0,10 do 
     b = players[i]
     if (b.isBot == true) then
@@ -13,5 +16,5 @@ for i=0,10 do
         humans.create(rb.pos, rb.rot, b)
     end
 end
-bottime = 0
+bottime = time
 botwait = true
